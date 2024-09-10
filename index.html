@@ -1,1 +1,648 @@
- <h1>hello</h1>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>AUD Demo</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+    <div class="container-fluid">
+        <div class="row" style="height: 200px;" >
+            <div class="col-xs-12" 
+                style="background-color: #074C88; height: 200px;">
+                <div class="text-center" style="line-height: 200px; color: white; font-size: 40px;">Demo for Binary AUD</div>
+            </div>
+        </div>
+        <div class="row" style="height: 50px;" >
+            <div class="col-xs-12" 
+                style="background-color: #0A68BE; height: 50px;">
+            </div>
+        </div>
+        <div class="row" style="height: 100px;" >
+            <div class="col-xs-12" style=" height: 50px; font-size: 30px;">
+                Samples for voice convertion
+            </div>
+        </div>
+        <div class="row" style="display: flex; justify-content: center;">
+            <table class="table-responsive" style="font-size: 20px;">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5">They tried to deny it</td>
+                    </tr>
+                    <tr>
+                        <td>Source</td>
+                        <td>Target</td>
+                        <td>VQ-Rec</td>
+                        <td>VQ-CPC</td>
+                        <td>Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls ><source src="./wav/p265_094.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/55_094.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p265_094_55_vqrec.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p265_094_55_vqcpc.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p265_094_55_cib12.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Which can happen any time</td>
+                    </tr>
+                    <tr>
+                        <td>Source</td>
+                        <td>Target</td>
+                        <td>VQ-Rec</td>
+                        <td>VQ-CPC</td>
+                        <td>Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls ><source src="./wav/p274_116.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/78_116.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p274_116_78_vqrec.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p274_116_78_vqcpc.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p274_116_78_cib12.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">We have only nine months to go</td>
+                    </tr>
+                    <tr>
+                        <td>Source</td>
+                        <td>Target</td>
+                        <td>VQ-Rec</td>
+                        <td>VQ-CPC</td>
+                        <td>Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls ><source src="./wav/p306_197.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/4_197.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p306_197_4_vqrec.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p306_197_4_vqcpc.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p306_197_4_cib12.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">about the bad things that happened to me</td>
+                    </tr>
+                    <tr>
+                        <td>Source</td>
+                        <td>Target</td>
+                        <td>VQ-Rec</td>
+                        <td>VQ-CPC</td>
+                        <td>Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls ><source src="./wav/p326_167.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/23_167.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p326_167_23_vqrec.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p326_167_23_vqcpc.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p326_167_23_cib12.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">He was also very happy to listen</td>
+                    </tr>
+                    <tr>
+                        <td>Source</td>
+                        <td>Target</td>
+                        <td>VQ-Rec</td>
+                        <td>VQ-CPC</td>
+                        <td>Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls ><source src="./wav/p361_241.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/100_241.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p361_241_100_vqrec.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p361_241_100_vqcpc.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p361_241_100_cib12.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">However the figures were disputed by the Scottish prison service</td>
+                    </tr>
+                    <tr>
+                        <td>Source</td>
+                        <td>Target</td>
+                        <td>VQ-Rec</td>
+                        <td>VQ-CPC</td>
+                        <td>Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls ><source src="./wav/p246_170.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/53_170.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p246_170_53_vqrec.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p246_170_53_vqcpc.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls ><source src="./wav/p246_170_53_cib12.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row" style="height: 100px;" >
+            <div class="col-xs-12" style=" height: 50px; font-size: 30px;">
+                Visualization results
+            </div>
+        </div>
+
+        <div class="row" style="display: flex; justify-content: center;">
+            <table class="table-responsive" style="font-size: 25px; max-width: 1500px">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>EH1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/16_122828_000020_000001_29520_EH1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>EY1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/22_121148_000011_000000_43680_EY1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>IH1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/93_123172_000004_000001_247440_IH1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>IH0</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/93_126209_000067_000002_67680_IH0.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/16_122828_000020_000001_29520_EH1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/22_121148_000011_000000_43680_EY1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/93_123172_000004_000001_247440_IH1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/93_126209_000067_000002_67680_IH0.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>AH0</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/98_199_000010_000006_10080_AH0.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>AH1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/101_126860_000013_000000_30720_AH1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>AY1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/114_129317_000011_000000_25200_AY1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>AE1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/176_122025_000063_000001_64080_AE1.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/98_199_000010_000006_10080_AH0.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/101_126860_000013_000000_30720_AH1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/114_129317_000011_000000_25200_AY1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/176_122025_000063_000001_64080_AE1.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>AO1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/278_127215_000016_000001_44400_AO1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>ER0</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/318_124164_000005_000003_68640_ER0.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>OW1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/580_126945_000018_000007_13440_OW1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>UH1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/639_124526_000058_000000_8640_UH1.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/278_127215_000016_000001_44400_AO1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/318_124164_000005_000003_68640_ER0.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/580_126945_000018_000007_13440_OW1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/639_124526_000058_000000_8640_UH1.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>IY0</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/688_46588_000008_000002_135360_IY0.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>Y</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/781_127518_000055_000000_91680_Y.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>UW1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/899_126233_000038_000000_34560_UW1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>AA1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/1112_128138_000027_000000_21600_AA1.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/688_46588_000008_000002_135360_IY0.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/781_127518_000055_000000_91680_Y.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/899_126233_000038_000000_34560_UW1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/1112_128138_000027_000000_21600_AA1.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>IY1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/1509_143477_000017_000000_4320_IY1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>AW1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/3540_163612_000098_000000_35040_AW1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>ER1</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/3584_74477_000033_000001_5520_ER1.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>CH</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/3869_700_000050_000011_35040_CH.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/1509_143477_000017_000000_4320_IY1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/3540_163612_000098_000000_35040_AW1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/3584_74477_000033_000001_5520_ER1.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/3869_700_000050_000011_35040_CH.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>JH</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/7484_39971_000014_000008_47760_JH.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>G</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/2204_131732_000013_000010_21360_G.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>TH</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/2137_131742_000014_000001_392400_TH.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>DH</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/1422_146111_000010_000004_91440_DH.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/7484_39971_000014_000008_47760_JH.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/2204_131732_000013_000010_21360_G.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/2137_131742_000014_000001_392400_TH.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/1422_146111_000010_000004_91440_DH.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>V</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/1383_130489_000058_000000_23760_V.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>SH</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/699_132882_000031_000002_720_SH.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>T</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/597_134789_000003_000004_352560_T.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>HH</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/561_126313_000004_000000_68160_HH.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/1383_130489_000058_000000_23760_V.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/699_132882_000031_000002_720_SH.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/597_134789_000003_000004_352560_T.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/561_126313_000004_000000_68160_HH.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>F</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/318_124164_000004_000002_179040_F.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>NG</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/296_142727_000011_000005_363840_NG.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>S</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/288_131220_000003_000003_84000_S.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>M</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/274_121392_000048_000000_26160_M.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/318_124164_000004_000002_179040_F.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/296_142727_000011_000005_363840_NG.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/288_131220_000003_000003_84000_S.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/274_121392_000048_000000_26160_M.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Z</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/272_130229_000001_000001_225360_Z.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>K</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/188_136483_000014_000003_149280_K.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>W</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/176_123269_000038_000004_49440_W.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>P</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/176_123269_000038_000004_37440_P.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/272_130229_000001_000001_225360_Z.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/188_136483_000014_000003_149280_K.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/176_123269_000038_000004_49440_W.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/176_123269_000038_000004_37440_P.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>R</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/176_122025_000063_000001_78720_R.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>D</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/115_122944_000007_000002_18480_D.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>L</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/114_129324_000039_000000_24000_L.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <p>N</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/101_126860_000045_000000_64080_N.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/176_122025_000063_000001_78720_R.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/115_122944_000007_000002_18480_D.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/114_129324_000039_000000_24000_L.png">
+                        </td>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/101_126860_000045_000000_64080_N.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>B</p>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 200px;"><source src="./phone_wav/16_122828_000039_000000_40080_B.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img class="img-responsive" src="./img/16_122828_000039_000000_40080_B.png">
+                        </td>
+                        <td colspan="2">
+                        </td>
+                        <td colspan="2">
+                        </td>
+                        <td colspan="2">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="clearfix visible-xs"></div>
+
+    </div>
+ 
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
